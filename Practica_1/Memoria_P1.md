@@ -60,4 +60,8 @@ Aunque al tratarse de una exploración pseudoaleatoria el recorrido no es exacta
 
 
 
+https://github.com/user-attachments/assets/36c6d7c2-e896-487e-bf2c-c41efc87f3cc
+
+
+
 
