@@ -52,6 +52,7 @@ El principal problema durante las pruebas fue conseguir que el robot no se queda
 También se tuvieron que probar diferentes rangos de las medidas del láser, ya que utilizar una zona demasiado pequeña delante del robot hacía que la detección de obstáculos fuese menos fiable.  
 
 Finalmente se optó por una solución sencilla en la que el láser se divide en tres zonas y el robot utiliza tanto la información de espacio disponible como la aleatoriedad de los giros para intentar explorar diferentes partes de la casa.  
+
 ## 7. Conclusión
 Como conclusión final se obtuvo una aspiradora basada en una máquina de estados que combina movimiento recto, retroceso, giros aleatorios y movimiento en espiral. El robot usa únicamente la información proporcionada por el láser para evitar obstáculos y continuar la exploración.  
 Aunque al tratarse de una exploración pseudoaleatoria el recorrido no es exactamente igual en todas las ejecuciones, la solución permite recorrer distintas zonas de la casa sin utilizar un mapa ni depender de la posición absoluta del robot.  
