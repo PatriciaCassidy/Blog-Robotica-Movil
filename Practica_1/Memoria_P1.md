@@ -45,6 +45,7 @@ Fotos del simulador:
 <img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/6f2ce4b2-0f37-4ed6-9324-ecd79c8ecdcf" />  
 
 <img width="1908" height="910" alt="image" src="https://github.com/user-attachments/assets/5593316a-6b66-45e8-9fa9-39752710ed7f" />  
+
 ## 6. Problemas encontrados  
 El principal problema durante las pruebas fue conseguir que el robot no se quedara repitiendo el mismo recorrido. Al principio, al utilizar una lógica demasiado simple, podía quedarse durante mucho tiempo en una misma zona.  
 
