@@ -30,9 +30,9 @@ Por ello se decidió no añadir una lógica excesivamente compleja y volver a un
 
 En cada iteración se obtienen las medidas del láser y se calculan tres distancias:  
 
-delante = min(laser_data.values[70:111])
-izquierda = min(laser_data.values[120:161])
-derecha = min(laser_data.values[19:60])
+delante = min(laser_data.values[70:111])  
+izquierda = min(laser_data.values[120:161])  
+derecha = min(laser_data.values[19:60])  
 
 Si la distancia frontal es inferior a 0.45 metros, se considera que existe un obstáculo y se pasa al estado RETROCEDER.
 
