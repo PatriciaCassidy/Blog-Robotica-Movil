@@ -44,7 +44,19 @@ El programa no utiliza las coordenadas x e y de la odometría para saber dónde 
 Fotos del simulador:  
 <img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/6f2ce4b2-0f37-4ed6-9324-ecd79c8ecdcf" />  
 
-<img width="1908" height="910" alt="image" src="https://github.com/user-attachments/assets/5593316a-6b66-45e8-9fa9-39752710ed7f" />
+<img width="1908" height="910" alt="image" src="https://github.com/user-attachments/assets/5593316a-6b66-45e8-9fa9-39752710ed7f" />  
+## 6. Problemas encontrados  
+El principal problema durante las pruebas fue conseguir que el robot no se quedara repitiendo el mismo recorrido. Al principio, al utilizar una lógica demasiado simple, podía quedarse durante mucho tiempo en una misma zona.  
+
+También se tuvieron que probar diferentes rangos de las medidas del láser, ya que utilizar una zona demasiado pequeña delante del robot hacía que la detección de obstáculos fuese menos fiable.  
+
+Finalmente se optó por una solución sencilla en la que el láser se divide en tres zonas y el robot utiliza tanto la información de espacio disponible como la aleatoriedad de los giros para intentar explorar diferentes partes de la casa.  
+## 7. Conclusión
+Como conclusión final se obtuvo una aspiradora basada en una máquina de estados que combina movimiento recto, retroceso, giros aleatorios y movimiento en espiral. El robot usa únicamente la información proporcionada por el láser para evitar obstáculos y continuar la exploración.  
+Aunque al tratarse de una exploración pseudoaleatoria el recorrido no es exactamente igual en todas las ejecuciones, la solución permite recorrer distintas zonas de la casa sin utilizar un mapa ni depender de la posición absoluta del robot.  
+
+## 8. Video de demostración  
+
 
 
 
