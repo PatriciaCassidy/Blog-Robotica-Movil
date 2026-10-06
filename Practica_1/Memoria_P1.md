@@ -19,6 +19,32 @@ El programa utiliza estos cuatro estados:
 
 La espiral permite recorrer zonas abiertas de una forma diferente al movimiento recto, mientras que los giros aleatorios permiten cambiar de dirección cuando se encuentran paredes u otros obstáculos. Este planteamiento coincide con la idea general de exploración aleatoria y movimiento en espiral propuesta para el ejercicio.
 
+## 4. Proceso de desarrollo
+Al principio se probó una solución más sencilla en la que el robot avanzaba y cambiaba de dirección principalmente al encontrar obstáculos. En las primeras pruebas el robot conseguía recorrer algunas zonas, pero acababa quedándose atrapado y repitiendo continuamente una parte del mapa.  
+
+A partir de estas pruebas se modificó la forma de detectar los obstáculos y la manera de realizar los giros. También se probaron diferentes velocidades y diferentes tamaños de giro. Una de las versiones llegó a conseguir aproximadamente un 83% de cobertura, aunque seguía teniendo el problema de repetir demasiado algunas zonas.  
+
+Por ello se decidió no añadir una lógica excesivamente compleja y volver a una solución más sencilla. La versión final mantiene la máquina de estados y utiliza el láser para decidir hacia qué lado girar, añadiendo una pequeña componente aleatoria al ángulo del giro. De esta forma el robot no realiza exactamente el mismo giro cada vez que encuentra una pared.  
+
+## 5. Funcionamiento del código final
+
+En cada iteración se obtienen las medidas del láser y se calculan tres distancias:  
+
+delante = min(laser_data.values[70:111])
+izquierda = min(laser_data.values[120:161])
+derecha = min(laser_data.values[19:60])
+
+Si la distancia frontal es inferior a 0.45 metros, se considera que existe un obstáculo y se pasa al estado RETROCEDER.
+
+Después de retroceder, se compara el espacio disponible a izquierda y derecha. El robot gira hacia el lado que tiene más espacio y el ángulo del giro se elige aleatoriamente entre 1.2 y 2.5 radianes.
+
+Cuando existe suficiente espacio alrededor del robot, se puede entrar en el estado ESPIRAL. En este estado se mantiene una velocidad angular constante mientras la velocidad lineal aumenta poco a poco, haciendo que el radio de la trayectoria sea cada vez mayor.
+
+El programa no utiliza las coordenadas x e y de la odometría para saber dónde está el robot, solamente utiliza las medidas del láser para tomar decisiones sobre el entorno.  
+Fotos del simulador:  
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/6f2ce4b2-0f37-4ed6-9324-ecd79c8ecdcf" />  
+
+<img width="1908" height="910" alt="image" src="https://github.com/user-attachments/assets/5593316a-6b66-45e8-9fa9-39752710ed7f" />
 
 
 
