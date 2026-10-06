@@ -11,7 +11,14 @@ A continuación, con estas medidas decidí dividir la zona de visión del robot 
 La lógica principal se encuentra dentro del while True, de manera que el robot está continuamente leyendo el láser y tomando nuevas decisiones. También se utiliza Frequency.tick(50) para controlar la frecuencia del bucle sin utilizar sleep(), taly como se pide en la práctica.
 
 ## 3. Máquina de estados
-El programa utiliza estos cuatro estados:
+El programa utiliza estos cuatro estados:  
+-AVANZAR: el robot se mueve hacia delante mientras no encuentre un obstáculo.  
+-RETROCEDER: cuando detecta un obstáculo, retrocede durante un pequeño número de ciclos para separarse de él.  
+-GIRAR: después de retroceder, decide si girar hacia la izquierda o hacia la derecha dependiendo de qué lado tenga más espacio. El tamaño del giro se elige de forma aleatoria.  
+-ESPIRAL: cuando el robot se encuentra en una zona abierta, realiza una trayectoria circular cuya velocidad lineal aumenta progresivamente, haciendo que la espiral se vaya abriendo.  
+
+La espiral permite recorrer zonas abiertas de una forma diferente al movimiento recto, mientras que los giros aleatorios permiten cambiar de dirección cuando se encuentran paredes u otros obstáculos. Este planteamiento coincide con la idea general de exploración aleatoria y movimiento en espiral propuesta para el ejercicio.
+
 
 
 
