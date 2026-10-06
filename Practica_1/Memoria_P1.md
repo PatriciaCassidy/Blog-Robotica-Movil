@@ -6,6 +6,12 @@ La finalidad principal es realizar una exploración pseudoaleatoria, sin utiliza
 
 ## 2. Planteamiento del problema
 Lo primero que se hizo fue usar la función parse_laser_data() proporcionada en el enunciado para transformar las 180 medidas del láser en coordenadas polares y cartesianas.  
-A continuación, con estas medidas decidí dividir la zona de visión del robot en tres partes: delante, izquierda y derecha.
+A continuación, con estas medidas decidí dividir la zona de visión del robot en tres partes: delante, izquierda y derecha. Para cada una se utiliza la distancia mínima, ya que de esta forma se puede saber si existe algún obstáculo cercano.  
+<img width="577" height="303" alt="image" src="https://github.com/user-attachments/assets/82e847f3-e0ef-4d6a-9971-a31d0b189e2b" />  
+La lógica principal se encuentra dentro del while True, de manera que el robot está continuamente leyendo el láser y tomando nuevas decisiones. También se utiliza Frequency.tick(50) para controlar la frecuencia del bucle sin utilizar sleep(), taly como se pide en la práctica.
+
+## 3. Máquina de estados
+El programa utiliza estos cuatro estados:
+
 
 
