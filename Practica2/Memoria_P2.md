@@ -102,6 +102,9 @@ El objetivo final es completar distintos circuitos de forma estable y en el meno
 ## 9. Capturas y vídeo de demostración
 
 ### Capturas del simulador
+<img width="2736" height="1542" alt="image" src="https://github.com/user-attachments/assets/130d36b0-62d8-480b-9898-3e5aa4465df0" />
 
 
 ### Vídeo de demostración
+
+
