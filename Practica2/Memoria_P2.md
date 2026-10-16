@@ -1,7 +1,3 @@
-
-
-
-
 # Práctica 2: Seguimiento de línea (Follow Line)
 
 ## 1. Introducción
@@ -95,9 +91,7 @@ Durante el desarrollo de la práctica aparecieron varios problemas relacionados 
 
 ## 8. Conclusión
 
-Como conclusión, se ha desarrollado un controlador visual para un coche autónomo que utiliza una cámara frontal para detectar una línea roja y seguir el recorrido de un circu
-
-ito.
+Como conclusión, se ha desarrollado un controlador visual para un coche autónomo que utiliza una cámara frontal para detectar una línea roja y seguir el recorrido de un circuito.
 
 El programa combina el procesamiento de imágenes con un controlador PID para calcular el giro y adapta la velocidad según la trayectoria detectada. Además, incluye mecanismos para continuar durante pequeñas pérdidas de la línea e intentar recuperarla cuando desaparece durante más tiempo.
 
@@ -110,5 +104,14 @@ El objetivo final es completar distintos circuitos de forma estable y en el meno
 
 
 ### Vídeo de demostración
+
+
+
+https://github.com/user-attachments/assets/99aec89a-cf5d-45e3-988d-42a0bba5be48  
+
+*Video acelerado al x2.
+
+
+
 
 
