@@ -10,3 +10,23 @@
 
 
 ## 4. Proceso de desarrollo
+
+
+## 5. Funcionamiento del código final
+
+
+## 6. Problemas encontrados
+
+
+## 7. Conclusión
+
+
+## 8. Capturas y vídeo de demostración
+ 
+### Capturas del simulador
+ 
+[Añadir capturas]
+ 
+### Vídeo de demostración
+ 
+[Añadir vídeo]
