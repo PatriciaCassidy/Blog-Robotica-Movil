@@ -75,11 +75,12 @@ Durante el desarrollo aparecieron varios problemas relacionados principalmente c
 El programa calcula en cada iteración una fuerza atractiva hacia el destino y una fuerza repulsiva generada por los obstáculos, las combina manteniendo siempre el avance hacia delante, y traduce el resultado en una velocidad angular proporcional al ángulo de la fuerza y una velocidad lineal que se adapta al giro y a la distancia al obstáculo frontal.  
  
 La principal ventaja del método es su sencillez y su rapidez de cálculo, que le permite reaccionar bien ante imprevistos. Como contrapartida, al no usar un mapa solo ve lo que detecta el láser en cada momento, y el compromiso entre velocidad y seguridad depende mucho de los parámetros elegidos, que se han ajustado de forma experimental en el simulador.  
-
-### Capturas del simulador
- 
-[Añadir capturas]
  
 ### Vídeo de demostración
  
-[Añadir vídeo]
+
+https://github.com/user-attachments/assets/a8e07d60-f7da-48fe-bbe4-ad23808235b8  
+
+*El video está editado para que se vea al x2 ya que en real time duraba mucho pero se cumplía el tiempo requerido en el sim time.
+
+
