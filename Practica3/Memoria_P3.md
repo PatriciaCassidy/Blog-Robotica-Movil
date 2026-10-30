@@ -81,6 +81,9 @@ La principal ventaja del método es su sencillez y su rapidez de cálculo, que l
 
 https://github.com/user-attachments/assets/a8e07d60-f7da-48fe-bbe4-ad23808235b8  
 
-*El video está editado para que se vea al x2 ya que en real time duraba mucho pero se cumplía el tiempo requerido en el sim time.
+*El video está editado para que se vea al x2 ya que en real time duraba mucho pero se cumplía el tiempo requerido en el sim time.  
+
+<img width="1322" height="724" alt="image" src="https://github.com/user-attachments/assets/184884bf-6b65-44ab-ab86-1b798576e152" />
+
 
 
