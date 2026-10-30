@@ -10,10 +10,15 @@ La solución realizada en Python se basa en el algoritmo VFF. Los obstáculos ge
 ## 2. Planteamiento del problema
 El algoritmo se ejecuta en un bucle infinito. En cada iteración se leen la posición del coche y las 180 medidas del láser, y se calculan dos vectores expresados en el sistema de referencia del coche, con el eje X hacia delante y el eje Y hacia la izquierda. Este sistema es el más cómodo para calcular y combinar las fuerzas, ya que permite saber directamente hacia qué lado debe girar el coche.  
 
-Fuerza atractiva: apunta hacia el waypoint actual. Las coordenadas del destino vienen en el sistema absoluto, por lo que se calcula el vector que va del coche al destino y se rota con el ángulo de orientación (yaw) del coche para pasarlo a su sistema de referencia. Después se normaliza para que tenga módulo 1, de forma que la atracción sea constante independientemente de la distancia.  
-Fuerza repulsiva: cada rayo del láser que detecta algo dentro de su rango genera un vector en sentido contrario al rayo, cuyo módulo es inversamente proporcional a la distancia medida (1/d). Para que no haya saltos, a este valor se le resta 1/límite, de forma que la fuerza vale cero justo en el límite del rango. La fuerza repulsiva total es la suma de las contribuciones de todos los rayos.  
+-Fuerza atractiva: apunta hacia el waypoint actual. Las coordenadas del destino vienen en el sistema absoluto, por lo que se calcula el vector que va del coche al destino y se rota con el ángulo de orientación (yaw) del coche para pasarlo a su sistema de referencia. Después se normaliza para que tenga módulo 1, de forma que la atracción sea constante independientemente de la distancia.  
+
+-Fuerza repulsiva: cada rayo del láser que detecta algo dentro de su rango genera un vector en sentido contrario al rayo, cuyo módulo es inversamente proporcional a la distancia medida (1/d). Para que no haya saltos, a este valor se le resta 1/límite, de forma que la fuerza vale cero justo en el límite del rango. La fuerza repulsiva total es la suma de las contribuciones de todos los rayos.  
 
 El rango de los rayos no es el mismo para todos. Los rayos frontales (aproximadamente ±30°) ven hasta 5 metros, para detectar a los otros coches con antelación. Los rayos laterales solo ven hasta 2 metros, para que el coche no reaccione de forma exagerada a las vallas.  
+
+<img width="846" height="1092" alt="image" src="https://github.com/user-attachments/assets/f569ac84-7e4d-4632-a692-f8f36e81b56b" />  
+
+<img width="730" height="1038" alt="image" src="https://github.com/user-attachments/assets/dc062d67-c54b-4f65-8fc6-a8f9c5dd0474" />  
 
 ## 3. Traducción de la fuerza a velocidades
 
