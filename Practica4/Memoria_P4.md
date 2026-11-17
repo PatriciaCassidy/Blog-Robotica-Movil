@@ -39,7 +39,8 @@ El programa se ejecuta en un bucle a 20 Hz (`Frequency.tick(20)`) y utiliza una 
 3.  **Control de velocidades:** 
     *   Si está en recta, usa el ángulo lejano, lo filtra con `SUAVIZADO` e ignora errores menores a `ZONA_MUERTA`. Va a velocidad máxima (`VMAX`).
     *   Si está en curva, usa el ángulo cercano (evitando cortar la esquina), aplica un factor de frenado y reduce la velocidad para girar con seguridad.
-    *   La velocidad angular se limita con `WMAX` para no hacer trompos.
+    *   La velocidad angular se limita con `WMAX` para no hacer trompos.  
+<img width="1324" height="1336" alt="image" src="https://github.com/user-attachments/assets/c77ffa84-4c99-4f94-b798-b070091732b5" />
 
 ## 5. Problemas encontrados
 
