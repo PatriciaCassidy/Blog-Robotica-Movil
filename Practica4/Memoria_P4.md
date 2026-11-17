@@ -54,4 +54,11 @@ Como conclusión, se ha implementado con éxito un sistema de navegación global
 
 La principal ventaja de este método es que, al tener un mapa global, el coche sabe siempre hacia dónde ir (el plan como recurso), evitando quedarse atrapado en mínimos locales. La integración de la penalización dentro del coste de la onda y el uso de las "dos miradas" han demostrado ser soluciones muy robustas para evitar desviaciones innecesarias y mantener una conducción suave tanto en rectas como en curvas.
 
-## 7. Capturas y vídeo de demostración
+## 7. Capturas y vídeo de demostración  
+
+
+https://github.com/user-attachments/assets/1169e535-3515-46de-bf4d-bc3075eefb6e
+
+
+
+
