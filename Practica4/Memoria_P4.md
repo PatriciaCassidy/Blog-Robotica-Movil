@@ -1,4 +1,4 @@
-# Práctica 4: Navegación Global con Gradient Path Planning (GPP)
+# Práctica 4: Navegación Global con algoritmo GPP, plan como recurso
 
 ## 1. Introducción
 
