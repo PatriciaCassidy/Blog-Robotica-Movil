@@ -158,7 +158,13 @@ La principal ventaja del método es que la planificación es completa y el compo
  <img width="1324" height="1336" alt="image" src="https://github.com/user-attachments/assets/c77ffa84-4c99-4f94-b798-b070091732b5" />
  
 ### Vídeo de demostración   
-https://github.com/user-attachments/assets/1169e535-3515-46de-bf4d-bc3075eefb6e
+https://github.com/user-attachments/assets/1169e535-3515-46de-bf4d-bc3075eefb6e  
+
+https://github.com/user-attachments/assets/40b41923-49e1-4397-b0bb-0c59694b2b02  
+
+*último video al x2.
+
+
 
 
 
